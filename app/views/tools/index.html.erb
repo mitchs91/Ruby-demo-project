@@ -1,0 +1,12 @@
+<h1 class=' text-3xl font-extrabold text-red-500'>Tools</h1>
+
+<ul>
+    <% @tools.each do |tool| %>
+        <li>
+            <%= link_to tool.name, tool_path(tool) %>
+            
+        </li>
+    <% end %>
+</ul>
+
+<%= link_to "New Tool", new_tool_path%>
